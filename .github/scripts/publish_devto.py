@@ -1,64 +1,89 @@
 #!/usr/bin/env python3
-import urllib.request, json, os, subprocess
+import urllib.request, json, os, subprocess, re
+
+def call_claude(prompt):
+    payload = json.dumps({
+        "model": "claude-haiku-4-5-20251001",
+        "max_tokens": 2000,
+        "messages": [{"role": "user", "content": prompt}]
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=payload,
+        headers={
+            "x-api-key": os.environ["ANTHROPIC_API_KEY"],
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json"
+        }
+    )
+    resp = json.loads(urllib.request.urlopen(req).read())
+    return resp["content"][0]["text"].strip()
+
+def extract_json(text):
+    # Try direct parse
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
+    # Strip ```json ... ```
+    match = re.search(r'```(?:json)?\s*([\s\S]+?)```', text)
+    if match:
+        try:
+            return json.loads(match.group(1).strip())
+        except Exception:
+            pass
+    # Find first { ... } block
+    match = re.search(r'\{[\s\S]+\}', text)
+    if match:
+        try:
+            return json.loads(match.group(0))
+        except Exception:
+            pass
+    return None
 
 # Get commit context
 commit_msg = subprocess.check_output(["git", "log", "-1", "--pretty=%B"]).decode().strip()
 changed_files = subprocess.check_output(["git", "diff", "--name-only", "HEAD~1", "HEAD"]).decode().strip()
 
+# Skip if only workflow files changed
+non_workflow = [f for f in changed_files.splitlines() if not f.startswith(".github")]
+if not non_workflow:
+    print("Only workflow files changed, skipping Dev.to post.")
+    exit(0)
+
 # Read changed skill files
 skill_content = ""
-for f in changed_files.splitlines():
+for f in non_workflow:
     if "SKILL.md" in f and os.path.exists(f):
         content = open(f).read()[:2000]
         skill_content += f"\n\n## {f}\n{content}"
 
-prompt = f"""You are a technical writer for Dev.to. A new commit was pushed to the hermes-skills GitHub repo (open-source skills for the Hermes AI agent).
+prompt = f"""You are a technical writer for Dev.to. A commit was pushed to the hermes-skills GitHub repo (open-source skills for the Hermes AI agent).
 
 Commit: {commit_msg}
 Changed files: {changed_files}
 
 Skill content:
-{skill_content if skill_content else "(general update — no skill files changed)"}
+{skill_content if skill_content else "(general update)"}
 
-Write a short Dev.to article (300-500 words) in English about this update.
-- Engaging title (not clickbait)
-- Brief intro: what problem this solves
-- How it works (include a short code/markdown snippet if relevant)
-- How to use it with the Hermes AI agent
-- End with a CTA to star the repo on GitHub
+Write a Dev.to article (300-500 words) in English.
+- Engaging title
+- Intro: what problem this solves
+- How it works (short code/markdown snippet if relevant)
+- How to use it with Hermes AI agent
+- CTA to star the GitHub repo
 
-Return ONLY valid JSON with this exact structure:
-{{"title": "...", "body_markdown": "...", "tags": ["tag1","tag2","tag3","tag4"]}}
+Respond with ONLY a JSON object — no prose, no markdown fences:
+{{"title": "article title here", "body_markdown": "full article body in markdown", "tags": ["hermes", "ai", "automation", "opensource"]}}"""
 
-Tags must only use: hermes, ai, automation, productivity, seo, wordpress, marketing, opensource, python, agile"""
+text = call_claude(prompt)
+article = extract_json(text)
 
-payload = json.dumps({
-    "model": "claude-haiku-4-5-20251001",
-    "max_tokens": 1500,
-    "messages": [{"role": "user", "content": prompt}]
-}).encode()
+if not article:
+    print("Failed to parse JSON from Claude. Raw response:")
+    print(text[:500])
+    exit(1)
 
-req = urllib.request.Request(
-    "https://api.anthropic.com/v1/messages",
-    data=payload,
-    headers={
-        "x-api-key": os.environ["ANTHROPIC_API_KEY"],
-        "anthropic-version": "2023-06-01",
-        "content-type": "application/json"
-    }
-)
-resp = json.loads(urllib.request.urlopen(req).read())
-text = resp["content"][0]["text"].strip()
-
-# Strip markdown code block if present
-if "```" in text:
-    parts = text.split("```")
-    text = parts[1]
-    if text.startswith("json"):
-        text = text[4:]
-    text = text.strip()
-
-article = json.loads(text)
 print(f"Title: {article['title']}")
 
 # Publish to Dev.to
@@ -67,7 +92,7 @@ payload2 = json.dumps({
         "title": article["title"],
         "body_markdown": article["body_markdown"],
         "published": True,
-        "tags": article["tags"][:4]
+        "tags": article.get("tags", ["hermes", "ai", "automation", "opensource"])[:4]
     }
 }).encode()
 
@@ -84,4 +109,5 @@ url = resp2.get("url", "")
 if url:
     print(f"Published: {url}")
 else:
-    print(f"Error: {resp2}")
+    print(f"Dev.to error: {resp2}")
+    exit(1)
