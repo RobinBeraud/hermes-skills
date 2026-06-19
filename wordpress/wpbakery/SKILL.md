@@ -1,6 +1,6 @@
 ---
 name: wpbakery
-description: "Créer des mises en page WordPress pro avec WPBakery — shortcodes + REST API (Corporate Mavericks, Coach Agile)."
+description: "Créer des mises en page WordPress pro avec WPBakery — shortcodes + REST API (your WordPress sites)."
 ---
 
 # Skill: wpbakery
