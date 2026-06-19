@@ -1,7 +1,7 @@
 # Skill: waitlister
 
 ## Description
-Gestion des waitlists Corporate Mavericks via Waitlister.me — consulter les inscrits, ajouter des leads, analyser les sources de trafic.
+Gestion des waitlists your product via Waitlister.me — consulter les inscrits, ajouter des leads, analyser les sources de trafic.
 
 ## Quand l'utiliser
 - Consulter les inscrits d'une waitlist

@@ -1,6 +1,6 @@
 ---
 name: neuronwriter
-description: "Analyse SEO de mots-clés et scoring de contenu via NeuronWriter (Contadu), avec pipeline de publication WordPress."
+description: "Analyse SEO de mots-clés et scoring de contenu via NeuronWriter API. Automate your SEO pipeline from keyword research to WordPress publishing."
 ---
 
 # Skill: neuronwriter
