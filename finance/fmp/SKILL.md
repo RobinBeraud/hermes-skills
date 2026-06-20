@@ -144,3 +144,4 @@ for r in results:
 ## Documentation
 - [FMP Developer Docs](https://site.financialmodelingprep.com/developer/docs)
 - Rate limit : dépend du plan souscrit
+<!-- trigger -->
