@@ -71,7 +71,7 @@ Write a Dev.to article (300-500 words) in English.
 - Intro: what problem this solves
 - How it works (short code/markdown snippet if relevant)
 - How to use it with Hermes AI agent
-- CTA to star the GitHub repo
+- CTA to star the GitHub repo at https://github.com/RobinBeraud/hermes-skills (use this exact URL, never invent another)
 
 Respond with ONLY a JSON object — no prose, no markdown fences:
 {{"title": "article title here", "body_markdown": "full article body in markdown", "tags": ["hermes", "ai", "automation", "opensource"]}}"""
