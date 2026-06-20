@@ -101,7 +101,8 @@ req2 = urllib.request.Request(
     data=payload2,
     headers={
         "api-key": os.environ["DEVTO_API_KEY"],
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (compatible; HermesSkillsBot/1.0; +https://github.com/RobinBeraud/hermes-skills)"
     }
 )
 resp2 = json.loads(urllib.request.urlopen(req2).read())
