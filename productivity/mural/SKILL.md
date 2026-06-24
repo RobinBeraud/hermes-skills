@@ -1,3 +1,8 @@
+---
+name: mural
+description: "Créer, lire, modifier et organiser des murals (tableaux de collaboration visuelle mural.co) via l'API Mural — workspaces, rooms, widgets (stickies, formes, textes, images, connecteurs)."
+---
+
 # Mural — Collaboration visuelle & murals
 
 ## Rôle
@@ -10,13 +15,35 @@ Créer, lire, modifier et organiser des murals (tableaux de collaboration visuel
 - Token valide 15 min — si 401, rafraîchir avec `MURAL_REFRESH_TOKEN` (voir section Refresh)
 
 ## Refresh du token (quand 401)
+
+⚠️ IMPORTANT : Mural EXIGE l'authentification client en **HTTP Basic** (header
+`Authorization: Basic base64(client_id:client_secret)`). Mettre `client_id` /
+`client_secret` dans le body renvoie `400 invalid_client`. Seuls `grant_type`
+et `refresh_token` vont dans le body.
+
 ```
 POST https://app.mural.co/api/public/v1/authorization/oauth2/token
+Authorization: Basic base64(MURAL_CLIENT_ID:MURAL_CLIENT_SECRET)
 Content-Type: application/x-www-form-urlencoded
 
-grant_type=refresh_token&refresh_token=$MURAL_REFRESH_TOKEN&client_id=$MURAL_CLIENT_ID&client_secret=$MURAL_CLIENT_SECRET
+grant_type=refresh_token&refresh_token=$MURAL_REFRESH_TOKEN
 ```
-→ Nouveau `access_token` à utiliser dans `MURAL_ACCESS_TOKEN`.
+→ Nouveau `access_token` (valide 900s) + `refresh_token` rotatif à resauvegarder.
+
+### Client prêt à l'emploi (recommandé)
+Un client Python gère tout ça automatiquement (refresh Basic + réécriture des
+tokens dans `.env` + retry 401) : `~/.hermes/scripts/mural_api.py`
+```bash
+python3 ~/.hermes/scripts/mural_api.py refresh                # force un refresh
+python3 ~/.hermes/scripts/mural_api.py get /workspaces        # appel GET auto-refresh
+python3 ~/.hermes/scripts/mural_api.py get /workspaces/<wsId>/murals
+```
+Ne PAS sourcer le token dans une commande shell inline : il est caviardé par le
+DLP et casse l'appariement des guillemets. Passer par le script (il lit `.env`).
+
+### Workspaces connus (compte Robin)
+- `agilecookbook4150` — **Corporate mavericks** (workspace principal, ~100+ murals)
+- `zenikabordeaux5861` — Mathilde Pro (OLD_ZBDX)
 
 ## Endpoints principaux
 
