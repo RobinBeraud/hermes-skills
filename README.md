@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-6-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-7-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -46,6 +46,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 ### 📢 Marketing
 | Skill | Description | Requires |
 |-------|-------------|----------|
+| [Hermes Tweet](marketing/hermes-tweet/SKILL.md) | Search X/Twitter, read replies, monitor accounts, export followers, and gate approved X actions through the native Hermes Tweet plugin | `XQUIK_API_KEY` |
 | [Waitlister](marketing/waitlister/SKILL.md) | Manage waitlists via Waitlister.me API | `WAITLISTER_API_KEY` |
 
 ## Quick Start
