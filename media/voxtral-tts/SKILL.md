@@ -127,8 +127,8 @@ When the user needs to share a Voxtral-generated audio file via WhatsApp:
 
 **Alternative**: Use your VPS (`YOUR_VPS_IP`) to host files temporarily:
 ```bash
-cp /path/to/audio.mp3 /home/ubuntu/corporate-mavericks/
-python3 -m http.server 8000 --directory /home/ubuntu/corporate-mavericks/ &
+cp /path/to/audio.mp3 /home/ubuntu/public/
+python3 -m http.server 8000 --directory /home/ubuntu/public/ &
 ```
 Then share:
 ```
