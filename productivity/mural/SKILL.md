@@ -41,9 +41,10 @@ python3 ~/.hermes/scripts/mural_api.py get /workspaces/<wsId>/murals
 Ne PAS sourcer le token dans une commande shell inline : il est caviardé par le
 DLP et casse l'appariement des guillemets. Passer par le script (il lit `.env`).
 
-### Workspaces connus (compte Robin)
-- `agilecookbook4150` — **Corporate mavericks** (workspace principal, ~100+ murals)
-- `zenikabordeaux5861` — Mathilde Pro (OLD_ZBDX)
+### Trouver votre workspace ID
+```bash
+python3 ~/.hermes/scripts/mural_api.py get /workspaces
+```
 
 ## Endpoints principaux
 
