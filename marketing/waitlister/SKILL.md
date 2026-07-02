@@ -19,7 +19,7 @@ Gestion des waitlists your product via Waitlister.me — consulter les inscrits,
 
 | Waitlist | Key | URL |
 |----------|-----|-----|
-| Corporate Mavericks (principale) | `YOUR_WAITLIST_KEY` | waitlist.your-site.com |
+| Ma Waitlist | `YOUR_WAITLIST_KEY` | waitlist.your-site.com |
 
 ---
 
@@ -83,11 +83,7 @@ curl -s -X POST "https://waitlister.me/api/v1/waitlist/YOUR_WAITLIST_KEY/log-vie
 
 ## Analyse des inscrits actuels (juin 2026)
 
-5 inscrits sur Corporate Mavericks :
-- Sources : LinkedIn (3), direct (2)
-- Pays : France, Canada, Maroc, Suisse, Espagne
-- Tous "probably_deliverable"
-- Systeme de referral actif (chaque inscrit a un referral_code)
+Analyse des inscrits : voir votre dashboard Waitlister pour les stats en temps réel.
 
 ---
 
@@ -101,7 +97,7 @@ Chaque inscrit recoit un `referral_code` unique. Partager ce code dans les email
 ### Sources a exploiter
 - LinkedIn est la source #1 (60%) : continuer posts LinkedIn avec CTA vers la waitlist
 - Creer une campagne Google Ads ciblant les managers / RH
-- Ajouter le lien waitlist dans la bio LinkedIn de Robin
+- Ajouter le lien waitlist dans la bio LinkedIn
 
 ### Contenu
 - Publier des teasers du contenu de la formation (extraits Management 3.0)
@@ -109,4 +105,4 @@ Chaque inscrit recoit un `referral_code` unique. Partager ce code dans les email
 - Email drip aux inscrits pour les garder engages
 
 ### Partenariats
-- Contacter les inscrits deja convertis (arnaudgarnier@gc-agiles.fr = cabinet agile) pour cross-promo
+- Contacter les inscrits déjà convertis pour cross-promo

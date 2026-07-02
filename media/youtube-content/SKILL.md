@@ -77,7 +77,7 @@ python3 SKILL_DIR/scripts/upload_video.py \
   --thumbnail thumbnail.png
 
 # Note: Tokens in /home/ubuntu/.hermes/google/youtube-token-*.json are now complete with client_id, client_secret, and token_uri
-# Token naming convention: youtube-token-{channel-name}.json (e.g., youtube-token-contesenchantes.json, youtube-token-corporatemavericks.json)
+# Token naming convention: youtube-token-{channel-name}.json (e.g., youtube-token-contesenchantes.json, youtube-token-CHANNEL_NAME.json)
 ```
 
 ## Output Formats

@@ -16,7 +16,7 @@ Analyse SEO de mots-clés et scoring de contenu via NeuronWriter (Contadu).
 
 ---
 
-## 🚦 SEUIL DE PUBLICATION (règle ferme Robin — your-site.com & your-site.com)
+## 🚦 SEUIL DE PUBLICATION (règle ferme — your-site.com)
 
 **Score `evaluate-content` ≥ 55 obligatoire avant de publier** (viser 60). C'est une des conditions du gate qualité décrit dans le skill `wpbakery` (avec : WPBakery, 0 tiret long `—`/`–`, 0 mot « rituel », image de une). Si < 55 : enrichir (FAQ People Also Ask + cas d'usage) AVANT publication. Exception documentée : le plafond sur mots-clés transactionnels (voir pitfall plus bas) — dans ce cas seulement, publier au score plafond une fois tous les termes `content_basic_w_ranges` couverts.
 

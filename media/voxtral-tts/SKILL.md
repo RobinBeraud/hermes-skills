@@ -91,21 +91,21 @@ with urllib.request.urlopen(req) as resp:
 
 If you save the response directly to a file (e.g., via `curl --output`), you get a JSON file, not audio. The file will be detected as `JSON data` by the `file` command and will fail to play.
 
-### Example with Emotion and Speed (Corporate Mavericks)
-For Robin's voice (`robin-enjoué`), use these parameters for dynamic content:
+### Example with Emotion and Speed (custom voice clone)
+For a custom voice clone, use these parameters for dynamic content:
 
 ```python
 data = json.dumps({
     "model": "voxtral-mini-tts-latest",
-    "input": "¡Hola Kicker! Soy Hermes, el asistente de Robin. Hoy te cuento sobre nuestros proyectos con impresión 3D y más.",
-    "voice_id": "robin-enjoué",  # Custom voice clone ID
+    "input": "Bonjour ! Voici un exemple de texte pour tester la voix personnalisée.",
+    "voice_id": "YOUR_VOICE_CLONE_ID",  # Custom voice clone ID
     "emotion": 0.7,              # 0.7 for provocative/engaging tone (videos)
     "speed": 1.1,                # 1.1 for dynamic rhythm (videos)
     "response_format": "mp3"
 }).encode()
 ```
 
-**Note**: The `emotion` and `speed` parameters are supported for custom voice clones like `robin-enjoué` but may be ignored for stock voices. See `references/corporate-mavericks-voxtral.md` for full voice parameters.
+**Note**: The `emotion` and `speed` parameters are supported for custom voice clones like `YOUR_VOICE_CLONE_ID` but may be ignored for stock voices. Check your voice clone documentation for full parameters.
 
 ### WhatsApp Sharing Workflow
 When the user needs to share a Voxtral-generated audio file via WhatsApp:
@@ -125,14 +125,14 @@ When the user needs to share a Voxtral-generated audio file via WhatsApp:
 
 **Pitfall**: WhatsApp Business API (WbizTool) cannot send generated audio directly due to platform restrictions. Always use a download link for user-mediated sharing.
 
-**Alternative for Robin**: For Corporate Mavericks content, use the Gandi VPS (`46.226.104.26`) to host files temporarily:
+**Alternative**: Use your VPS (`YOUR_VPS_IP`) to host files temporarily:
 ```bash
 cp /path/to/audio.mp3 /home/ubuntu/corporate-mavericks/
 python3 -m http.server 8000 --directory /home/ubuntu/corporate-mavericks/ &
 ```
 Then share:
 ```
-http://46.226.104.26:8000/audio.mp3
+http://YOUR_VPS_IP:8000/audio.mp3
 ```
 
 ## Pitfalls
@@ -156,14 +156,11 @@ http://46.226.104.26:8000/audio.mp3
 
 6. **Curl with redacted keys fails**: Use Python `urllib.request` instead of curl for reliable API access when keys are redacted.
 
-7. **Current Robin voice UUIDs (June 2026)**:
-   - Robin normal: `7f1bb905-cfa4-4899-9ac1-d4769e5a9590`
-   - Robin enjoué: `c8fe05ae-4039-4e23-9ea6-dfd80a2a8e05` 
-   - Robin Neutre: `0058db7e-c315-46c8-9869-b2036d90ec56`
+7. **Voice UUIDs**: Retrieve current UUIDs from `GET /v1/audio/voices` — don't hardcode them, they can change.
 
 8. **Output size**: A short sentence (~5 words) produces ~20KB MP3. A 20-second clip is ~100KB. A 40-second clip is ~270KB (decoded from ~360KB base64 JSON).
 
-9. **Emotion/speed parameters NOT SUPPORTED**: The API documentation shows `emotion` and `speed` parameters, but these return HTTP 422 "Unprocessable Entity" errors as of June 2026. DO NOT use these parameters in requests. Custom voice clones like Robin's are already trained with their intended emotional tone. Focus on script quality and word choice rather than API parameters for voice improvement.
+9. **Emotion/speed parameters NOT SUPPORTED**: The API documentation shows `emotion` and `speed` parameters, but these return HTTP 422 "Unprocessable Entity" errors as of June 2026. DO NOT use these parameters in requests. Custom voice clones are already trained with their intended emotional tone. Focus on script quality and word choice rather than API parameters for voice improvement.
 
 10. **HyperFrames audio integration pitfall**: When using Voxtral-generated audio in HyperFrames videos, audio may not be captured during rendering. Use these proven methods:
     - Method 1: `<audio id="audio" src="filename.mp3" preload="auto"></audio>` (simple, usually works)
@@ -198,10 +195,9 @@ Stock voices follow the pattern: `en_paul_happy`, `en_paul_sad`, `en_paul_neutra
 3. Render with FFmpeg
 
 ### YouTube Automation Workflow
-For Corporate Mavericks video publishing with Voxtral voiceovers:
-1. Generate script with Corporate Mavericks tone
-2. Create audio with Robin's voice (enjoué preferred)
-3. Build HyperFrames video composition  
+1. Generate script
+2. Create audio with Voxtral (custom or stock voice)
+3. Build HyperFrames video composition
 4. Upload to YouTube with proper authentication
 
-**Important**: YouTube OAuth tokens expire frequently. See `references/youtube-token-workflow.md` for token renewal process and Robin's "publie directement" workflow preference (direct publication without review cycles).
+**Important**: YouTube OAuth tokens expire frequently. See `references/youtube-token-workflow.md` for token renewal process.
