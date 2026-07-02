@@ -131,7 +131,7 @@ La doc historique de ce skill utilisait des noms de champs qui RENVOIENT UNE ERR
 - Plan Gold minimum requis
 - language: "French", "English", etc. (nom complet, pas le code ISO)
 - engine: "google.fr", "google.com", "google.co.uk", etc.
-- Project Corporate Mavericks : `YOUR_NW_PROJECT_ID` (French / google.fr)
+- Project ID : `YOUR_NW_PROJECT_ID` (ex: French / google.fr)
 
 ## Publier l'article optimisé sur WordPress
 Pour le pipeline complet veille → analyse SEO → rédaction Gutenberg → publication WordPress (your-site.com), voir `references/wordpress-publishing.md`.

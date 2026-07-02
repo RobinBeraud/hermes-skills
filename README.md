@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
-  <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
+  <a href="https://dev.to/YOUR_DEVTO"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
   <img src="https://img.shields.io/badge/skills-6-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
@@ -75,7 +75,7 @@ PRs welcome! Skills should:
 
 ## Auto-publishing
 
-New skills are automatically published as Dev.to articles via GitHub Actions on each push. Follow [dev.to/robinberaud](https://dev.to/robinberaud) for updates.
+New skills are automatically published as Dev.to articles via GitHub Actions on each push. Follow [dev.to/YOUR_DEVTO](https://dev.to/YOUR_DEVTO) for updates.
 
 ## License
 
