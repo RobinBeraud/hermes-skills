@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-26-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-28-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -17,6 +17,16 @@
 Skills are Markdown files that give Hermes contextual knowledge and reusable code patterns to interact with external services. Drop a `SKILL.md` into `~/.hermes/skills/` and your agent knows how to use the service.
 
 ## Available Skills
+
+### 🔬 Research
+| Skill | Description | Requires |
+|-------|-------------|----------|
+| [Data Intelligence Router](research/data-intelligence-router/SKILL.md) | Route research questions to open APIs (OpenAlex, Crossref, arXiv, World Bank, ECB, NVD, Wikipedia...) through one keyless adapter with normalized JSON and provenance | — |
+
+### 🎨 Media
+| Skill | Description | Requires |
+|-------|-------------|----------|
+| [Note Visual](media/note-visual/SKILL.md) | Hand-drawn style diagrams (compare, 2x2 matrix, funnel, steps) as PNG for Substack Notes / LinkedIn posts, exact text, no image model | Pillow |
 
 ### 💹 Finance
 | Skill | Description | Requires |

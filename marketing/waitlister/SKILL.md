@@ -1,3 +1,14 @@
+---
+name: waitlister
+description: Manage Waitlister.me waitlists: list signups, add leads, analyze traffic sources
+version: 1.0.0
+platforms: [linux, macos]
+metadata:
+  hermes:
+    tags: [waitlist, leads, marketing]
+    category: marketing
+---
+
 # Skill: waitlister
 
 ## Description
