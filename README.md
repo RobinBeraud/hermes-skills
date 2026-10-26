@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.png" alt="hermes-skills: open-source skills for Hermes Agent" width="100%"></p>
+
 <p align="center">
   <h1 align="center">hermes-skills</h1>
   <p align="center">Open-source skills library for <a href="https://github.com/NousResearch/hermes-agent">Hermes AI Agent</a> — plug-and-play integrations for finance, web, marketing and more.</p>
@@ -11,6 +13,10 @@
 </p>
 
 ---
+
+## See it in action
+
+<p align="center"><img src="assets/demo.gif" alt="env-secrets-scanner finding leaked secrets before a commit" width="720"></p>
 
 ## What are Hermes Skills?
 
