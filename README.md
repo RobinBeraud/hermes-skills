@@ -28,7 +28,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
-| [env-secrets-scanner](productivity/env-secrets-scanner/SKILL.md) | Scan a project folder or git-staged files for leaked secrets (.env files, API keys, private keys, passwords in URLs) before committing, with | 2026-10-26 |
+| [env-secrets-scanner](security/env-secrets-scanner/SKILL.md) | Scan a project folder or git-staged files for leaked secrets (.env files, API keys, private keys, passwords in URLs) before committing, with | 2026-10-26 |
 
 
 ### 🔬 Research
