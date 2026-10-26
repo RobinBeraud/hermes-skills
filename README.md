@@ -18,6 +18,17 @@
 
 <p align="center"><img src="assets/demo.gif" alt="env-secrets-scanner finding leaked secrets before a commit" width="720"></p>
 
+## Install a skill (one command)
+
+Hermes can install any skill straight from this repo, with a security scan and a confirmation prompt:
+
+```bash
+hermes skills inspect RobinBeraud/hermes-skills/security/env-secrets-scanner   # preview, installs nothing
+hermes skills install RobinBeraud/hermes-skills/security/env-secrets-scanner   # install
+```
+
+Replace the path with any skill folder listed below (`<category>/<skill>`).
+
 ## What are Hermes Skills?
 
 Skills are Markdown files that give Hermes contextual knowledge and reusable code patterns to interact with external services. Drop a `SKILL.md` into `~/.hermes/skills/` and your agent knows how to use the service.
