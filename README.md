@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-28-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-29-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -17,6 +17,13 @@
 Skills are Markdown files that give Hermes contextual knowledge and reusable code patterns to interact with external services. Drop a `SKILL.md` into `~/.hermes/skills/` and your agent knows how to use the service.
 
 ## Available Skills
+
+### 🆕 Latest additions
+| Skill | Description | Added |
+|-------|-------------|-------|
+<!-- LATEST -->
+| [env-secrets-scanner](productivity/env-secrets-scanner/SKILL.md) | Scan a project folder or git-staged files for leaked secrets (.env files, API keys, private keys, passwords in URLs) before committing, with | 2026-10-26 |
+
 
 ### 🔬 Research
 | Skill | Description | Requires |
