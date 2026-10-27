@@ -1,0 +1,12 @@
+From: alerts@example.com
+To: alice@example.com
+Subject: 2 new listings
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body>
+<div><b>Nice 2-room flat</b><br>Nantes 44000<br>Price: 168=C2=A0000 =E2=82=AC<br>Surface: 48 m=C2=B2<br><a href=3D"https://example.com/ad/2001">view</a></div>
+<br><br>
+<div><b>Family house</b><br>Rennes 35000<br>Price: 410 000 =E2=82=AC<br>Surface: 120 m2<br><a href=3D"https://example.com/ad/2002">view</a></div>
+</body></html>
