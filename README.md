@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-29-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-30-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [listing-alert-triage](automation/listing-alert-triage/SKILL.md) | Parse real-estate listing alert e-mails (plain text, HTML or .eml), extract price, surface and city, compute price per m2, compare it to ref | 2026-10-27 |
 | [env-secrets-scanner](security/env-secrets-scanner/SKILL.md) | Scan a project folder or git-staged files for leaked secrets (.env files, API keys, private keys, passwords in URLs) before committing, with | 2026-10-26 |
 
 
