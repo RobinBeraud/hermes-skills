@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-32-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-33-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [invoice-to-ledger-csv](productivity/invoice-to-ledger-csv/SKILL.md) | Extract supplier, date, net, VAT, gross and a suggested category from invoice text or PDF files into an accounting-ready CSV, with total-con | 2026-10-30 |
 | [real-estate-regulation-watch](research/real-estate-regulation-watch/SKILL.md) | Weekly watch on housing regulation news and French mortgage rates, built from public RSS feeds and the ECB open data API, with a source link | 2026-10-29 |
 | [area-market-analysis](data-analysis/area-market-analysis/SKILL.md) | Analyse the residential property market of a French commune from open DVF sales data (volumes, median price per m2, apartments vs houses, tr | 2026-10-28 |
 | [listing-alert-triage](automation/listing-alert-triage/SKILL.md) | Parse real-estate listing alert e-mails (plain text, HTML or .eml), extract price, surface and city, compute price per m2, compare it to ref | 2026-10-27 |
