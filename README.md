@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-34-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-35-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [sitemap-link-checker](web/sitemap-link-checker/SKILL.md) | Check a website for broken pages and dead outgoing links starting from its sitemap.xml, using one stdlib Python script; use it before a laun | 2026-11-01 |
 | [flip-margin-calculator](finance/flip-margin-calculator/SKILL.md) | Compute the projected profit, margins, ROI, break-even resale price and sensitivity table of a buy-renovate-resell property deal from editab | 2026-10-31 |
 | [invoice-to-ledger-csv](productivity/invoice-to-ledger-csv/SKILL.md) | Extract supplier, date, net, VAT, gross and a suggested category from invoice text or PDF files into an accounting-ready CSV, with total-con | 2026-10-30 |
 | [real-estate-regulation-watch](research/real-estate-regulation-watch/SKILL.md) | Weekly watch on housing regulation news and French mortgage rates, built from public RSS feeds and the ECB open data API, with a source link | 2026-10-29 |
