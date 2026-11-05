@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-38-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-39-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [seo-page-audit](seo/seo-page-audit/SKILL.md) | Audit the on-page SEO of a single URL or local HTML file (title, meta description, headings, canonical, images, links, content length) and g | 2026-11-05 |
 | [readme-auditor](software-development/readme-auditor/SKILL.md) | Audit a README.md with a local script (title, intro, install, usage, code blocks, license, links) and get a 0-100 score plus prioritized fix | 2026-11-04 |
 | [csv-quick-insights](data-analysis/csv-quick-insights/SKILL.md) | Profile an unfamiliar CSV in seconds with a stdlib-only Python script: column types, missing values, duplicates, numeric outliers, top categ | 2026-11-03 |
 | [changelog-from-git](software-development/changelog-from-git/SKILL.md) | Generate a readable, grouped Markdown changelog from git history (Conventional Commits aware, PR numbers kept) between two refs; use when pr | 2026-11-02 |
