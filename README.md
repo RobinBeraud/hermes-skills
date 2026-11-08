@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-41-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-42-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [docker-compose-auditor](devops/docker-compose-auditor/SKILL.md) | Audit a docker-compose.yml for exposed databases, inline secrets, privileged containers, unpinned images, missing restart policies and healt | 2026-11-08 |
 | [server-health-report](devops/server-health-report/SKILL.md) | Produce a read-only health report for a Linux server (disk, inodes, memory, swap, load, failed systemd units, pending updates, reboot flag)  | 2026-11-07 |
 | [backup-verifier](devops/backup-verifier/SKILL.md) | Check that a backup file exists, is recent, is not suspiciously small, and actually decompresses, using one dependency-free Python script. U | 2026-11-06 |
 | [seo-page-audit](seo/seo-page-audit/SKILL.md) | Audit the on-page SEO of a single URL or local HTML file (title, meta description, headings, canonical, images, links, content length) and g | 2026-11-05 |
