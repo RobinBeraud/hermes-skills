@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-63-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-64-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [content-repurposer](content-creation/content-repurposer/SKILL.md) | Turns one article, transcribed video or podcast into several formats (LinkedIn post, carousel, thread, newsletter blurb, short-video script) | 2026-11-10 |
 | [dependency-update-watch](software-development/dependency-update-watch/SKILL.md) | Check a requirements.txt or package.json against PyPI and the npm registry and report which pinned dependencies have major, minor or patch u | 2026-11-09 |
 | [docker-compose-auditor](devops/docker-compose-auditor/SKILL.md) | Audit a docker-compose.yml for exposed databases, inline secrets, privileged containers, unpinned images, missing restart policies and healt | 2026-11-08 |
 | [server-health-report](devops/server-health-report/SKILL.md) | Produce a read-only health report for a Linux server (disk, inodes, memory, swap, load, failed systemd units, pending updates, reboot flag)  | 2026-11-07 |
