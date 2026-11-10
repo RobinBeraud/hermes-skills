@@ -1,0 +1,17 @@
+{
+  "question": "Will the new online course break even in its first quarter?",
+  "inputs": {
+    "visitors": {"dist": "triangular", "low": 6000, "mode": 9000, "high": 16000},
+    "conversion": {"dist": "normal", "mean": 0.018, "sd": 0.006, "min": 0.002},
+    "price": {"value": 149},
+    "refund_rate": {"dist": "uniform", "low": 0.02, "high": 0.08},
+    "ads_budget": {"value": 9000},
+    "production_cost": {"dist": "triangular", "low": 6000, "mode": 8000, "high": 12000}
+  },
+  "outputs": {
+    "buyers": "visitors * conversion",
+    "net_revenue": "buyers * price * (1 - refund_rate)",
+    "profit": "net_revenue - ads_budget - production_cost"
+  },
+  "targets": {"profit": {"above": 0}, "buyers": {"above": 150}}
+}

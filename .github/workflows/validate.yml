@@ -11,3 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 tools/validate_skills.py
+      - run: python3 -m unittest discover -s tests -v

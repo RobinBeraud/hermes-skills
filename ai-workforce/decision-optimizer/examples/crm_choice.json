@@ -1,0 +1,20 @@
+{
+  "question": "Which CRM should a 12-person sales team adopt this quarter?",
+  "criteria": [
+    {"name": "annual_cost_eur", "weight": 3, "direction": "min"},
+    {"name": "ease_of_use", "weight": 4},
+    {"name": "integrations", "weight": 3},
+    {"name": "migration_weeks", "weight": 2, "direction": "min"},
+    {"name": "gdpr_eu_hosting", "weight": 2}
+  ],
+  "constraints": [
+    {"criterion": "annual_cost_eur", "max": 15000},
+    {"criterion": "gdpr_eu_hosting", "min": 1}
+  ],
+  "options": [
+    {"name": "CRM Alpha", "annual_cost_eur": 9600, "ease_of_use": 8, "integrations": 6, "migration_weeks": 3, "gdpr_eu_hosting": 1},
+    {"name": "CRM Beta", "annual_cost_eur": 14200, "ease_of_use": 7, "integrations": 9, "migration_weeks": 6, "gdpr_eu_hosting": 1},
+    {"name": "CRM Gamma", "annual_cost_eur": 6000, "ease_of_use": 6, "integrations": 5, "migration_weeks": 2, "gdpr_eu_hosting": 1},
+    {"name": "CRM Delta", "annual_cost_eur": 21000, "ease_of_use": 9, "integrations": 9, "migration_weeks": 8, "gdpr_eu_hosting": 0}
+  ]
+}
