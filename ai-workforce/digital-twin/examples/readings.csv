@@ -1,0 +1,16 @@
+timestamp,signal,value
+2026-11-10T08:00:00,temp_c,2.1
+2026-11-10T08:00:00,humidity_pct,86
+2026-11-10T08:00:00,door_open,0
+2026-11-10T08:00:00,compressor_kw,1.1
+2026-11-10T08:15:00,temp_c,2.4
+2026-11-10T08:15:00,compressor_kw,1.2
+2026-11-10T08:30:00,temp_c,2.9
+2026-11-10T08:30:00,door_open,1
+2026-11-10T08:30:00,compressor_kw,1.9
+2026-11-10T08:45:00,temp_c,3.6
+2026-11-10T08:45:00,door_open,0
+2026-11-10T08:45:00,compressor_kw,2.3
+2026-11-10T09:00:00,temp_c,4.4
+2026-11-10T09:00:00,compressor_kw,2.4
+2026-11-10T09:00:00,vibration_mm_s,3.1

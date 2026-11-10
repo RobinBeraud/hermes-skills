@@ -1,0 +1,83 @@
+{
+ "id_col": "user_id",
+ "exclude": [
+  [
+   "opt_out",
+   "==",
+   "yes"
+  ]
+ ],
+ "journeys": [
+  {
+   "name": "activation_rescue",
+   "when": [
+    [
+     "projects",
+     "==",
+     0
+    ],
+    [
+     "days_since_signup",
+     ">=",
+     3
+    ]
+   ],
+   "channel": "email",
+   "message": "Your first project in 5 minutes, step by step"
+  },
+  {
+   "name": "win_back",
+   "when": [
+    [
+     "last_seen_days",
+     ">=",
+     30
+    ],
+    [
+     "projects",
+     ">=",
+     1
+    ]
+   ],
+   "channel": "email",
+   "message": "Here is what changed since your last visit"
+  },
+  {
+   "name": "team_upsell",
+   "when": [
+    [
+     "plan",
+     "==",
+     "pro"
+    ],
+    [
+     "seats_used",
+     ">=",
+     4
+    ]
+   ],
+   "channel": "in_app",
+   "message": "Your team is growing: shared workspaces"
+  },
+  {
+   "name": "enterprise_contact",
+   "when": [
+    [
+     "plan",
+     "==",
+     "team"
+    ],
+    [
+     "seats_used",
+     ">=",
+     20
+    ]
+   ],
+   "channel": "sales"
+  }
+ ],
+ "default": {
+  "name": "nurture",
+  "channel": "newsletter"
+ }
+}

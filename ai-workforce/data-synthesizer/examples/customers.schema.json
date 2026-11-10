@@ -1,0 +1,16 @@
+{
+  "rows": 200,
+  "seed": 7,
+  "columns": [
+    {"name": "customer_id", "type": "id", "prefix": "C-", "start": 1000},
+    {"name": "full_name", "type": "name"},
+    {"name": "email", "type": "email", "from": "full_name"},
+    {"name": "country", "type": "choice", "values": {"FR": 0.55, "ES": 0.25, "PT": 0.2}},
+    {"name": "age", "type": "int", "mean": 41, "sd": 11, "min": 18, "max": 85},
+    {"name": "monthly_spend", "type": "float", "mean": 20, "sd": 12, "min": 0, "depends_on": {"column": "age", "slope": 0.6}},
+    {"name": "signup_date", "type": "date", "start": "2025-01-01", "end": "2026-10-31"},
+    {"name": "plan", "type": "choice", "values": {"free": 0.6, "pro": 0.3, "team": 0.1}},
+    {"name": "churned", "type": "bool", "p": 0.18},
+    {"name": "last_feedback", "type": "text", "null_rate": 0.4}
+  ]
+}

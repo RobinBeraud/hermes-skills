@@ -1,0 +1,9 @@
+{
+  "asset": "Cold room 2 (kitchen)",
+  "signals": {
+    "temp_c": {"min": 0, "max": 4, "alpha": 0.3, "stale_after_min": 30, "max_drift": 1.5},
+    "humidity_pct": {"min": 75, "max": 95, "alpha": 0.2, "stale_after_min": 60},
+    "door_open": {"min": 0, "max": 0, "alpha": 0.5, "stale_after_min": 60},
+    "compressor_kw": {"min": 0.2, "max": 2.5, "alpha": 0.3, "stale_after_min": 30}
+  }
+}

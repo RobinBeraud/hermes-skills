@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" font-family="Inter,Segoe UI,Arial,sans-serif">
+<title>The newsletter brings more leads than any other channel</title><desc>Leads by channel, last 90 days: leads Newsletter 412, LinkedIn 265, Partners 198, Webinars 151, SEO 96, Ads 58</desc>
+<rect width="800" height="420" fill="#fff"/>
+<text x="150" y="30" font-size="19" font-weight="700" fill="#111827">The newsletter brings more leads than any other channel</text>
+<text x="150" y="54" font-size="13.5" fill="#6B7280">Leads by channel, last 90 days</text>
+<line x1="150.0" y1="78" x2="150.0" y2="372" stroke="#E5E7EB"/><text x="150.0" y="390" font-size="11.5" fill="#6B7280" text-anchor="middle">0</text>
+<line x1="272.0" y1="78" x2="272.0" y2="372" stroke="#E5E7EB"/><text x="272.0" y="390" font-size="11.5" fill="#6B7280" text-anchor="middle">100</text>
+<line x1="394.0" y1="78" x2="394.0" y2="372" stroke="#E5E7EB"/><text x="394.0" y="390" font-size="11.5" fill="#6B7280" text-anchor="middle">200</text>
+<line x1="516.0" y1="78" x2="516.0" y2="372" stroke="#E5E7EB"/><text x="516.0" y="390" font-size="11.5" fill="#6B7280" text-anchor="middle">300</text>
+<line x1="638.0" y1="78" x2="638.0" y2="372" stroke="#E5E7EB"/><text x="638.0" y="390" font-size="11.5" fill="#6B7280" text-anchor="middle">400</text>
+<line x1="760.0" y1="78" x2="760.0" y2="372" stroke="#E5E7EB"/><text x="760.0" y="390" font-size="11.5" fill="#6B7280" text-anchor="middle">500</text>
+<text x="140" y="105.9" font-size="12.5" fill="#111827" text-anchor="end" dominant-baseline="middle">Newsletter</text>
+<rect x="150" y="85.3" width="502.6" height="34.3" rx="3" fill="#2563EB"/>
+<text x="658.6" y="105.9" font-size="12" fill="#111827" dominant-baseline="middle">412</text>
+<text x="140" y="154.9" font-size="12.5" fill="#111827" text-anchor="end" dominant-baseline="middle">LinkedIn</text>
+<rect x="150" y="134.3" width="323.3" height="34.3" rx="3" fill="#9CA3AF"/>
+<text x="479.3" y="154.9" font-size="12" fill="#111827" dominant-baseline="middle">265</text>
+<text x="140" y="203.9" font-size="12.5" fill="#111827" text-anchor="end" dominant-baseline="middle">Partners</text>
+<rect x="150" y="183.3" width="241.6" height="34.3" rx="3" fill="#9CA3AF"/>
+<text x="397.6" y="203.9" font-size="12" fill="#111827" dominant-baseline="middle">198</text>
+<text x="140" y="252.9" font-size="12.5" fill="#111827" text-anchor="end" dominant-baseline="middle">Webinars</text>
+<rect x="150" y="232.3" width="184.2" height="34.3" rx="3" fill="#9CA3AF"/>
+<text x="340.2" y="252.9" font-size="12" fill="#111827" dominant-baseline="middle">151</text>
+<text x="140" y="301.9" font-size="12.5" fill="#111827" text-anchor="end" dominant-baseline="middle">SEO</text>
+<rect x="150" y="281.4" width="117.1" height="34.3" rx="3" fill="#9CA3AF"/>
+<text x="273.1" y="301.9" font-size="12" fill="#111827" dominant-baseline="middle">96</text>
+<text x="140" y="350.9" font-size="12.5" fill="#111827" text-anchor="end" dominant-baseline="middle">Ads</text>
+<rect x="150" y="330.4" width="70.8" height="34.3" rx="3" fill="#9CA3AF"/>
+<text x="226.8" y="350.9" font-size="12" fill="#111827" dominant-baseline="middle">58</text>
+</svg>
