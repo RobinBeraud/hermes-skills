@@ -1,0 +1,23 @@
+[project]
+name = "claude-seo"
+version = "2.6.0"
+description = "Comprehensive SEO analysis skill for Claude Code"
+requires-python = ">=3.11"
+license = "MIT"
+readme = "README.md"
+authors = [
+  {name = "Daniel Agrici"}
+]
+keywords = ["seo", "claude-code", "ai-tools", "schema-markup", "e-e-a-t", "geo"]
+
+[project.urls]
+Homepage = "https://github.com/AgriciDaniel/claude-seo"
+Repository = "https://github.com/AgriciDaniel/claude-seo"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

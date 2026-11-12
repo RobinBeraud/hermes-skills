@@ -1,0 +1,6 @@
+{
+  "name": "seo-suite",
+  "version": "2.6.0+hermes.1",
+  "upstream": "https://github.com/AgricIDaniel/claude-seo",
+  "upstream_version": "2.6.0"
+}
