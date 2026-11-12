@@ -247,7 +247,7 @@ def main():
             sys.exit(1)
         targets.append(normalized)
 
-    api_key = get_keywordseverywhere_api_key()
+    api_key = (get_keywordseverywhere_api_key())
     if not api_key:
         result = {
             "status": "error",
