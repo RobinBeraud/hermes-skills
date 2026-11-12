@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-66-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-67-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [seo-suite](seo/seo-suite/SKILL.md) | Full SEO toolkit ported from claude-seo: site audits with a 0-100 score, technical SEO, Core Web Vitals, schema, AI search (GEO), local, backl | 2026-11-12 |
 | [short-video-script](content-creation/short-video-script/SKILL.md) | Write a short-form video script (Reel, TikTok, YouTube Short) with a hook, tension, payoff, call to action, shot notes and caption chunks, t | 2026-11-12 |
 | [hook-lab](content-creation/hook-lab/SKILL.md) | Generate 10 hooks for a post or video, then score them on explicit criteria (specificity, curiosity, promise kept) and flag over-promising.  | 2026-11-11 |
 | [content-repurposer](content-creation/content-repurposer/SKILL.md) | Turns one article, transcribed video or podcast into several formats (LinkedIn post, carousel, thread, newsletter blurb, short-video script) | 2026-11-10 |
@@ -100,6 +101,7 @@ Twenty roles for your Hermes agent, each with documented use cases and, for 13 o
 | Skill | Description | Requires |
 |-------|-------------|----------|
 | [NeuronWriter](seo/neuronwriter/SKILL.md) | Content analysis and optimization via NeuronWriter API | `NEURONWRITER_API_KEY` |
+| [SEO Suite](seo/seo-suite/SKILL.md) | Full SEO toolkit ported from [claude-seo](https://github.com/AgricIDaniel/claude-seo) (MIT): 26 commands from full-site audit to GEO, local, backlinks and drift monitoring, 60+ Python tools | Python 3.11+, one-time `setup` (optional Google / Moz / DataForSEO keys) |
 
 ### 🌐 WordPress
 | Skill | Description | Requires |
