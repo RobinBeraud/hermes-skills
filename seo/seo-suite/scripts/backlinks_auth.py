@@ -480,16 +480,16 @@ TIER 2: + BING WEBMASTER TOOLS API (free, verified sites)
 OPTIONAL: KEYWORDS EVERYWHERE / OPEN PAGERANK (free signup, single-metric fallback)
 --------------------------------------------------------------------------------------
   1. Sign in to the Keywords Everywhere dashboard (formerly OpenPageRank)
-  2. Copy your API key (format: opr_live_xxxxxxxxxxxxxxxx)
+  2. Copy your API key (format: opr_live_<your-key>)
   3. Verify current pricing/credit terms in the dashboard before relying on it --
      not independently confirmed here.
 
   Configure:
-    export KEYWORDSEVERYWHERE_API_KEY="opr_live_xxxxxxxxxxxxxxxx"
+    export KEYWORDSEVERYWHERE_API_KEY="opr_live_<your-key>"
 
   Or add to """ + CONFIG_PATH + """:
     {
-      "keywordseverywhere_api_key": "opr_live_xxxxxxxxxxxxxxxx"
+      "keywordseverywhere_api_key": "opr_live_<your-key>"
     }
 
   Provides: A single 0-10 domain rank score, up to 100 domains per request.
