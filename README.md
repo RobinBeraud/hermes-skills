@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-67-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-94-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [content-calendar-30-days](content-creation/content-calendar-30-days/SKILL.md) | Build a 30-day editorial calendar from 3 content pillars, with topics, formats, platforms and recycling of past top posts; use when a creato | 2026-11-13 |
 | [seo-suite](seo/seo-suite/SKILL.md) | Full SEO toolkit ported from claude-seo: site audits with a 0-100 score, technical SEO, Core Web Vitals, schema, AI search (GEO), local, backl | 2026-11-12 |
 | [short-video-script](content-creation/short-video-script/SKILL.md) | Write a short-form video script (Reel, TikTok, YouTube Short) with a hook, tension, payoff, call to action, shot notes and caption chunks, t | 2026-11-12 |
 | [hook-lab](content-creation/hook-lab/SKILL.md) | Generate 10 hooks for a post or video, then score them on explicit criteria (specificity, curiosity, promise kept) and flag over-promising.  | 2026-11-11 |
