@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-96-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-97-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [comment-reply-assistant](content-creation/comment-reply-assistant/SKILL.md) | Sorts an export of comments into questions, praise, criticism and spam, then drafts replies in the creator's own voice for human approval. U | 2026-11-16 |
 | [brand-deal-pitch](content-creation/brand-deal-pitch/SKILL.md) | Write a short, honest partnership pitch email to a brand (and a follow-up) from facts the creator provides, with checks against invented fig | 2026-11-15 |
 | [media-kit-builder](content-creation/media-kit-builder/SKILL.md) | Build a clean, printable one-page HTML media kit from the figures a creator provides, refusing to invent statistics; use when a creator or f | 2026-11-14 |
 | [content-calendar-30-days](content-creation/content-calendar-30-days/SKILL.md) | Build a 30-day editorial calendar from 3 content pillars, with topics, formats, platforms and recycling of past top posts; use when a creato | 2026-11-13 |
