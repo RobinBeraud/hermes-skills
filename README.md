@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-99-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-100-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [transcript-to-chapters](media/transcript-to-chapters/SKILL.md) | Turn a timestamped transcript (SRT or VTT) into YouTube chapters, a short summary and quote candidates for social posts; use after recording | 2026-11-19 |
 | [creator-analytics-digest](data-analysis/creator-analytics-digest/SKILL.md) | Turn a CSV export of post or video statistics (YouTube Studio, Instagram, TikTok, LinkedIn, any spreadsheet) into a plain-language digest of | 2026-11-18 |
 | [sponsored-post-disclosure-check](content-creation/sponsored-post-disclosure-check/SKILL.md) | Checks that a sponsored or gifted social post shows the commercial relationship clearly (wording, position, hashtag burying) against an edit | 2026-11-17 |
 | [comment-reply-assistant](content-creation/comment-reply-assistant/SKILL.md) | Sorts an export of comments into questions, praise, criticism and spam, then drafts replies in the creator's own voice for human approval. U | 2026-11-16 |
