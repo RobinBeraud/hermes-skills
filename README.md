@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-101-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-102-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [veille-pro](research/veille-pro/SKILL.md) | Daily professional watch for content creation: follows reference blogs and RSS feeds with blogwatcher-cli (Firecrawl fallback for blocked sites), then writes a sourced article brief  | 2026-11-20 |
 | [caption-multiplatform](content-creation/caption-multiplatform/SKILL.md) | Adapts one caption idea into separate versions for Instagram, TikTok, LinkedIn and YouTube (length, tone, hashtags, call to action) and chec | 2026-11-20 |
 | [transcript-to-chapters](media/transcript-to-chapters/SKILL.md) | Turn a timestamped transcript (SRT or VTT) into YouTube chapters, a short summary and quote candidates for social posts; use after recording | 2026-11-19 |
 | [creator-analytics-digest](data-analysis/creator-analytics-digest/SKILL.md) | Turn a CSV export of post or video statistics (YouTube Studio, Instagram, TikTok, LinkedIn, any spreadsheet) into a plain-language digest of | 2026-11-18 |
@@ -84,6 +85,7 @@ Twenty roles for your Hermes agent, each with documented use cases and, for 13 o
 | Skill | Description | Requires |
 |-------|-------------|----------|
 | [Data Intelligence Router](research/data-intelligence-router/SKILL.md) | Route research questions to open APIs (OpenAlex, Crossref, arXiv, World Bank, ECB, NVD, Wikipedia...) through one keyless adapter with normalized JSON and provenance | — |
+| [Veille pro](research/veille-pro/SKILL.md) | Daily watch of reference blogs and RSS feeds (blogwatcher-cli, Firecrawl fallback) that turns fresh sources into one sourced, non-duplicate article brief | blogwatcher-cli, optional FIRECRAWL_API_KEY |
 
 ### 🎨 Media
 | Skill | Description | Requires |
