@@ -65,6 +65,7 @@ hermes skills install <propriétaire>/<dépôt>/<chemin-du-skill>
 | [obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases) | 23 416 | Versions d'Obsidian et liste officielle des extensions et thèmes | Pour installer Obsidian et choisir ses extensions |
 | [Vinzent03/obsidian-git](https://github.com/Vinzent03/obsidian-git) | 12 305 | Synchronise un coffre Obsidian avec Git, automatiquement | Le lien entre ton Obsidian et le second cerveau de Hermes |
 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 87 310 | Montage vidéo par IA, en HTML, open source | Pour transformer tes contenus en vidéos |
+| [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 18 975 | Boîte à outils de 99 styles de films faits en code pour Claude Code, plus les tiens : chaque style est un prompt de style prêt à l'emploi | Donner un vrai style visuel à tes vidéos, sans caméra ni logiciel de montage |
 
 ## 6. Pour aller plus loin
 
