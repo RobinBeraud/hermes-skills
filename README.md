@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-102-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-103-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [ugc-brief-writer](marketing/ugc-brief-writer/SKILL.md) | Write a clear brief for UGC creators (goal, key messages, do and don't, deliverables, usage rights, disclosure, payment) and check it for ga | 2026-11-21 |
 | [veille-pro](research/veille-pro/SKILL.md) | Daily professional watch for content creation: follows reference blogs and RSS feeds with blogwatcher-cli (Firecrawl fallback for blocked sites), then writes a sourced article brief  | 2026-11-20 |
 | [caption-multiplatform](content-creation/caption-multiplatform/SKILL.md) | Adapts one caption idea into separate versions for Instagram, TikTok, LinkedIn and YouTube (length, tone, hashtags, call to action) and chec | 2026-11-20 |
 | [transcript-to-chapters](media/transcript-to-chapters/SKILL.md) | Turn a timestamped transcript (SRT or VTT) into YouTube chapters, a short summary and quote candidates for social posts; use after recording | 2026-11-19 |
