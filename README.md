@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-103-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-104-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [youtube-title-thumbnail-brief](content-creation/youtube-title-thumbnail-brief/SKILL.md) | Turn a video idea into several matching title + thumbnail pairs with a short designer brief, then check length, readability and honest wordi | 2026-11-22 |
 | [ugc-brief-writer](marketing/ugc-brief-writer/SKILL.md) | Write a clear brief for UGC creators (goal, key messages, do and don't, deliverables, usage rights, disclosure, payment) and check it for ga | 2026-11-21 |
 | [veille-pro](research/veille-pro/SKILL.md) | Daily professional watch for content creation: follows reference blogs and RSS feeds with blogwatcher-cli (Firecrawl fallback for blocked sites), then writes a sourced article brief  | 2026-11-20 |
 | [caption-multiplatform](content-creation/caption-multiplatform/SKILL.md) | Adapts one caption idea into separate versions for Instagram, TikTok, LinkedIn and YouTube (length, tone, hashtags, call to action) and chec | 2026-11-20 |
