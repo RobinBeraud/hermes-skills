@@ -1,0 +1,15 @@
+1
+00:00:01,000 --> 00:00:03,000
+Hello and welcome back to the channel.
+
+2
+00:00:03,000 --> 00:00:03,400
+Quick.
+
+3
+00:00:03,300 --> 00:00:05,000
+This line is intentionally far too long to fit comfortably on one screen line
+
+4
+00:00:05,000 --> 00:00:06,000
+Short and fine.
