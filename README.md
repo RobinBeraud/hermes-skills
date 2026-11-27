@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/RobinBeraud/hermes-skills/stargazers"><img src="https://img.shields.io/github/stars/RobinBeraud/hermes-skills?style=flat-square" alt="Stars"></a>
   <a href="https://dev.to/robinberaud"><img src="https://img.shields.io/badge/Dev.to-articles-0a0a0a?style=flat-square&logo=devdotto" alt="Dev.to"></a>
-  <img src="https://img.shields.io/badge/skills-108-blue?style=flat-square" alt="Skills count">
+  <img src="https://img.shields.io/badge/skills-109-blue?style=flat-square" alt="Skills count">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
 </p>
 
@@ -39,6 +39,7 @@ Skills are Markdown files that give Hermes contextual knowledge and reusable cod
 | Skill | Description | Added |
 |-------|-------------|-------|
 <!-- LATEST -->
+| [newsletter-subject-tester](marketing/newsletter-subject-tester/SKILL.md) | Generate several honest subject-line options for a newsletter issue, score them against explicit written criteria, and flag misleading or pu | 2026-11-27 |
 | [subtitle-quality-check](content-creation/subtitle-quality-check/SKILL.md) | Checks an SRT or WebVTT subtitle file for reading speed, line length, overlaps and timing problems, then suggests fixes; use before uploadin | 2026-11-26 |
 | [newsletter-from-week](content-creation/newsletter-from-week/SKILL.md) | Build a weekly newsletter draft from the posts, videos and episodes a creator published this week, with a subject line, short intro, pick of | 2026-11-25 |
 | [collab-outreach](content-creation/collab-outreach/SKILL.md) | Draft short, personal collaboration messages to other creators from your notes on each profile, then lint the batch for generic flattery, mi | 2026-11-24 |
